@@ -6,16 +6,16 @@
 <title>Contact — Ezéckiel Atteka</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="Contactez Ezéckiel G. Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
+<meta name="description" content="Contactez Ezéckiel Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Contact — Ezéckiel Atteka">
-<meta property="og:description" content="Contactez Ezéckiel G. Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
+<meta property="og:description" content="Contactez Ezéckiel Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
 <meta property="og:image" content="og-image.png">
 <meta property="og:url" content="contact.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact — Ezéckiel Atteka">
-<meta name="twitter:description" content="Contactez Ezéckiel G. Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
+<meta name="twitter:description" content="Contactez Ezéckiel Atteka par email, WhatsApp ou formulaire pour toute collaboration ou question.">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,7 +115,7 @@ header{
     max-height:0; overflow:hidden;
     transition:max-height .3s ease;
   }
-  .nav-links.open{max-height:240px;}
+  .nav-links.open{max-height:600px;}
   .nav-links a{
     display:block; padding:16px 32px; border-top:1px solid var(--line);
   }
@@ -207,19 +207,20 @@ header{
 }
 
 /* ---------- page header (réalisations / contact) ---------- */
-.page-head{
-  padding:80px 0 60px;
+  .page-head{
+  padding:40px 0 30px;
   border-bottom:1px solid var(--line);
 }
-.page-head span.kicker{
-  font-size:0.95rem; color:var(--teal); margin-bottom:18px; display:block;
+.page-head .wrap{ text-align:center; }
+.page-head .kicker{
+  font-size:0.88rem; color:var(--teal); margin-bottom:12px; display:block; text-align:center;
 }
 .page-head h1{
-  font-size:clamp(2.2rem, 4vw, 3.1rem);
-  max-width:18ch;
+  font-size:clamp(1.6rem, 3vw, 2.4rem);
+  max-width:48ch; margin:0 auto; text-align:center; line-height:1.2;
 }
 .page-head p{
-  margin-top:20px; color:#cfd1cb; max-width:52ch; font-size:1.05rem;
+  margin-top:12px; color:#cfd1cb; max-width:60ch; font-size:0.98rem; text-align:center; margin-left:auto; margin-right:auto;
 }
 
 /* ---------- réalisations ---------- */
@@ -270,7 +271,7 @@ main.realisations-main{padding:80px 0 100px;}
 }
 
 /* ---------- contact ---------- */
-main.contact-main{padding:80px 0 100px;}
+main.contact-main{padding:20px 0 60px;}
 .contact-grid{
   display:grid;
   grid-template-columns:1.2fr 1px 0.9fr;
@@ -305,6 +306,34 @@ textarea{min-height:120px;}
 .form-note{
   margin-top:16px; font-size:0.85rem; color:var(--muted); min-height:1.2em;
 }
+
+/* Form design: card layout, two-column grid, rounded inputs */
+.form-card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid var(--line);
+  padding:28px;
+  border-radius:14px;
+}
+.form-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px; align-items:start;}
+.form-card .field{margin:0;}
+.form-card input, .form-card textarea{
+  width:100%;
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.06);
+  padding:12px 14px;
+  border-radius:8px;
+  color:var(--paper);
+  font-family:'Inter',sans-serif;
+  font-size:1rem;
+}
+.form-card input::placeholder, .form-card textarea::placeholder{color:rgba(255,255,255,0.35);}
+.form-card input:focus, .form-card textarea:focus{
+  outline:none; border-color:var(--teal); box-shadow:0 6px 18px rgba(94,234,212,0.06);
+}
+.form-card .full{grid-column:1 / -1}
+.form-card .actions{display:flex; justify-content:flex-end; grid-column:1 / -1;}
+.form-card .actions .send-btn{margin:0;}
+@media (max-width:820px){.form-grid{grid-template-columns:1fr;}}
 
 .contact-direct h3{font-size:1.3rem; margin-bottom:18px;}
 .contact-direct .email-link{
@@ -593,8 +622,9 @@ main.cv-main{padding:70px 0 110px;}
 }
 
 .message-heading{margin-bottom:32px;}
-.message-heading h2{font-size:1.5rem; margin-bottom:10px;}
-.message-heading p{color:var(--muted); font-size:0.95rem; margin:0;}
+.message-heading{margin-bottom:32px;}
+.message-heading h3{font-size:1.5rem; margin-bottom:10px; color:var(--teal); text-align:center;}
+.message-heading p{color:var(--muted); font-size:0.95rem; margin:0; text-align:center;}
 
 @media (max-width:600px){
   .contact-card{padding:30px 24px;}
@@ -729,7 +759,7 @@ main.cv-main{padding:70px 0 110px;}
 <body>
 <header>
   <nav class="nav">
-    <a href="index.html" class="mark">Ezéckiel G. Atteka</a>
+    <a href="index.html" class="mark">Ezéckiel Atteka</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="apropos.html">À propos</a></li>
@@ -744,9 +774,9 @@ main.cv-main{padding:70px 0 110px;}
 
 <div class="page-head">
   <div class="wrap">
-    <span class="kicker">Contact</span>
-    <h1>Un projet, une idée à en discuter ?</h1>
-    <p>N'hésite pas à m'écrire ou à m'appeler pour toute question, information ou collaboration.</p>
+    <h3 class="kicker">Contact</h3>
+    <h1>Un projet ou une idée à discuter ?</h1>
+    <p>N'hésite pas à m'écrire ou m'appeler pour toute question ou collaboration.</p>
   </div>
 </div>
 
@@ -803,31 +833,37 @@ main.cv-main{padding:70px 0 110px;}
     </div>
 
     <div class="message-heading">
-      <h2>Envoyer un message</h2>
+      <h3>Envoyer un message</h3>
       <p>Remplis le formulaire ci-dessous, je te répondrai dans les plus brefs délais.</p>
     </div>
 
     <div class="contact-grid">
-      <form id="contactForm">
-        <div class="field">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="field">
-          <label for="subject">Objet</label>
-          <input type="text" id="subject" name="subject">
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="send-btn">Envoyer le message</button>
-        <p class="form-note" id="formNote"></p>
-      </form>
+      <div class="form-card">
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Ton nom complet" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="adresse@exemple.com" required>
+            </div>
+            <div class="field full">
+              <label for="subject">Objet</label>
+              <input type="text" id="subject" name="subject" placeholder="Sujet du message">
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Écris ton message ici..." required></textarea>
+            </div>
+            <div class="actions">
+              <button type="submit" class="send-btn btn-primary">Envoyer le message</button>
+            </div>
+            <p class="form-note" id="formNote"></p>
+          </div>
+        </form>
+      </div>
 
       <div class="contact-divider"></div>
 
