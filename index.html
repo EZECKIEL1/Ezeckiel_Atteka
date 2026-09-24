@@ -6,40 +6,16 @@
 <title>Ezéckiel Atteka</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="Portfolio personnel de Ezéckiel Atteka, développeur web full stack, graphiste et data analyst en devenir, étudiant en Informatique et Télécommunications à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "@id": "https://ezeckielatteka.online/#ezeckiel-atteka",
-    "name": "Ezéckiel Atteka",
-    "url": "https://ezeckielatteka.online/",
-    "image": "https://ezeckielatteka.online/photo-ezeckiel.png",
-    "description": "Développeur web full stack, graphiste et data analyste en devenir, étudiant en Informatique et Télécommunications à Lokossa, Bénin.",
-    "sameAs": [
-      "https://www.linkedin.com/in/ez%C3%A9ckiel-atteka-6b334b373",
-      "https://www.instagram.com/ezeckiel_atteka/",
-      "https://www.facebook.com/profile.php?id=61581636572805",
-      "https://github.com/EZECKIEL1"
-    ]
-  }
-}
-</script>
-
-
-
-  
-  <meta property="og:type" content="website">
+<meta name="description" content="Portfolio personnel d'Ezéckiel Atteka, développeur web full stack et graphiste basé à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Ezéckiel Atteka">
-<meta property="og:description" content="Portfolio personnel d'Ezéckiel G. Atteka, développeur web full stack et graphiste basé à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
+<meta property="og:description" content="Portfolio personnel d'Ezéckiel Atteka, développeur web full stack et graphiste basé à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
 <meta property="og:image" content="og-image.png">
 <meta property="og:url" content="index.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ezéckiel Atteka">
-<meta name="twitter:description" content="Portfolio personnel d'Ezéckiel G. Atteka, développeur web full stack et graphiste basé à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
+<meta name="twitter:description" content="Portfolio personnel d'Ezéckiel Atteka, développeur web full stack et graphiste basé à Lokossa, Bénin. Découvrez ses projets, son CV et ses coordonnées.">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,7 +115,7 @@ header{
     max-height:0; overflow:hidden;
     transition:max-height .3s ease;
   }
-  .nav-links.open{max-height:240px;}
+  .nav-links.open{max-height:600px;}
   .nav-links a{
     display:block; padding:16px 32px; border-top:1px solid var(--line);
   }
@@ -148,7 +124,7 @@ header{
 
 /* ---------- hero (accueil) ---------- */
 .hero{
-  padding:96px 0 100px;
+  padding:72px 0 100px;
   border-bottom:1px solid var(--line);
 }
 .hero .wrap{
@@ -159,16 +135,51 @@ header{
 }
 .hero-photo{
   aspect-ratio:4/5;
-  border:1px solid var(--line);
   background:linear-gradient(160deg, var(--ink-2), #0c0d11);
   display:flex; align-items:center; justify-content:center;
   position:relative;
   overflow:hidden;
   opacity:0; transform:translateY(14px);
   animation: rise .8s ease forwards .1s;
+
+  /* Centrer le bloc photo dans sa cellule et ajouter un encadrement visible */
+  justify-self: center;
+  max-width:360px;
+  padding:8px;
+  border-radius:12px;
+  border:2px solid var(--line);
+  box-shadow:0 12px 30px rgba(0,0,0,0.45);
 }
 .hero-photo img{
   width:100%; height:100%; object-fit:cover;
+  border-radius:8px;
+  display:block;
+}
+
+/* wrapper to allow a caption just under the photo */
+.hero-photo-wrap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-self:center;
+  /* éloigner la photo du texte principal */
+  margin-right:24px;
+}
+.photo-caption{
+  margin-top:6px; /* rapprocher la salutation du nom */
+  color:var(--paper);
+  font-size:1.05rem;
+  text-align:center;
+  font-family:'Fraunces', serif;
+}
+
+.hero-title-row{display:block;}
+.greeting{display:block; margin-bottom:6px; font-family:'Inter',sans-serif; color:var(--muted); font-size:1.05rem;}
+
+/* écarter légèrement la photo du reste du contenu sur desktop */
+@media (min-width:821px){
+  .hero-photo-wrap{margin-right:80px;}
+  .hero-title-row{gap:18px;}
 }
 .hero-photo .initials{
   font-family:'Fraunces', serif;
@@ -228,6 +239,14 @@ header{
 @media (max-width:820px){
   .hero .wrap{grid-template-columns:1fr; gap:40px;}
   .hero-photo{max-width:320px;}
+  .hero-text{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .hero-text .bio{max-width:52ch;}
+  .hero-actions{justify-content:center;}
 }
 
 /* ---------- page header (réalisations / contact) ---------- */
@@ -753,7 +772,7 @@ main.cv-main{padding:70px 0 110px;}
 <body>
 <header>
   <nav class="nav">
-    <a href="index.html" class="mark">Ezéckiel G. Atteka</a>
+    <a href="index.html" class="mark">Ezéckiel Atteka</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Accueil</a></li>
       <li><a href="apropos.html">À propos</a></li>
@@ -769,10 +788,13 @@ main.cv-main{padding:70px 0 110px;}
 <main>
   <section class="hero">
     <div class="wrap">
-      <div class="hero-photo">
-        <img src="photo-ezeckiel.png" alt="Photo de Ezéckiel">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo">
+          <img src="photo-ezeckiel.png" alt="Photo de Ezéckiel">
+        </div>
       </div>
       <div class="hero-text">
+        <span class="greeting">Salut, je suis</span>
         <h1 class="eyebrow-free-label">Ezéckiel Atteka</h1>
         <p class="status-line"><span id="statusText"></span><span class="status-cursor">&nbsp;</span></p>
         <p class="bio">
@@ -780,8 +802,8 @@ main.cv-main{padding:70px 0 110px;}
           et je me forme aujourd'hui à l'analyse de données pour donner du sens aux chiffres autant qu'aux images.
         </p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Contact</a>
-          <a href="portfolio.html" class="btn btn-ghost">Portfolio</a>
+          <a href="portfolio.html" class="btn btn-primary">Voir mes réalisations</a>
+          <a href="contact.html" class="btn btn-ghost">Contact</a>
         </div>
       </div>
     </div>
