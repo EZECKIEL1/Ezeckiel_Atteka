@@ -6,16 +6,16 @@
 <title>CV — Ezéckiel Atteka</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="description" content="CV d'Ezéckiel G. Atteka : formation à l'INSTI Lokossa, expériences en développement web et compétences techniques. PDF téléchargeable.">
+<meta name="description" content="CV d'Ezéckiel Atteka : formation à l'Instiu National Superieur De Technologie Industrielle(INSTI-Lokossa), expériences en développement web et compétences techniques. PDF téléchargeable.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="CV — Ezéckiel Atteka">
-<meta property="og:description" content="CV d'Ezéckiel G. Atteka : formation à l'INSTI Lokossa, expériences en développement web et compétences techniques. PDF téléchargeable.">
+<meta property="og:description" content="CV d'Ezéckiel Atteka : formation à l'Instiu National Superieur De Technologie Industrielle(INSTI-Lokossa), expériences en développement web et compétences techniques. PDF téléchargeable.">
 <meta property="og:image" content="og-image.png">
 <meta property="og:url" content="cv.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CV — Ezéckiel Atteka">
-<meta name="twitter:description" content="CV d'Ezéckiel G. Atteka : formation à l'INSTI Lokossa, expériences en développement web et compétences techniques. PDF téléchargeable.">
+<meta name="twitter:description" content="CV d'Ezéckiel Atteka : formation à l'Instiu National Superieur De Technologie Industrielle(INSTI-Lokossa), expériences en développement web et compétences techniques. PDF téléchargeable.">
 <meta name="twitter:image" content="og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,7 +115,7 @@ header{
     max-height:0; overflow:hidden;
     transition:max-height .3s ease;
   }
-  .nav-links.open{max-height:240px;}
+  .nav-links.open{max-height:600px;}
   .nav-links a{
     display:block; padding:16px 32px; border-top:1px solid var(--line);
   }
@@ -208,18 +208,19 @@ header{
 
 /* ---------- page header (réalisations / contact) ---------- */
 .page-head{
-  padding:80px 0 60px;
+  padding:40px 0 30px;
   border-bottom:1px solid var(--line);
 }
+.page-head .wrap{ text-align:center; }
 .page-head span.kicker{
-  font-size:0.95rem; color:var(--teal); margin-bottom:18px; display:block;
+  font-size:0.88rem; color:var(--teal); margin-bottom:12px; display:block; text-align:center;
 }
 .page-head h1{
-  font-size:clamp(2.2rem, 4vw, 3.1rem);
-  max-width:18ch;
+  font-size:clamp(1.6rem, 3vw, 2.4rem);
+  max-width:48ch; margin:0 auto; text-align:center; line-height:1.2;
 }
 .page-head p{
-  margin-top:20px; color:#cfd1cb; max-width:52ch; font-size:1.05rem;
+  margin-top:12px; color:#cfd1cb; max-width:60ch; font-size:0.98rem; text-align:center; margin-left:auto; margin-right:auto;
 }
 
 /* ---------- réalisations ---------- */
@@ -447,46 +448,46 @@ main.placeholder-main{padding:100px 0 140px;}
 }
 
 /* ---------- CV ---------- */
-main.cv-main{padding:70px 0 110px;}
+.cv-main{padding:48px 0 80px;}
 .cv-download{
-  margin-bottom:64px;
+  margin-bottom:36px;
   display:flex; align-items:center; justify-content:space-between;
-  flex-wrap:wrap; gap:20px;
-  padding-bottom:40px;
+  flex-wrap:wrap; gap:14px;
+  padding-bottom:20px;
   border-bottom:1px solid var(--line);
 }
-.cv-download p{color:var(--muted); font-size:0.95rem; margin:0; max-width:44ch;}
-.cv-section{margin-bottom:56px;}
+.cv-download p{color:var(--muted); font-size:0.95rem; margin:0; max-width:52ch;}
+.cv-section{margin-bottom:40px;}
 .cv-section h2{
-  font-size:1.4rem;
-  margin-bottom:28px;
-  padding-bottom:14px;
+  font-size:1.18rem;
+  margin-bottom:18px;
+  padding-bottom:8px;
   border-bottom:1px solid var(--line);
 }
 .cv-entry{
   display:grid;
   grid-template-columns:1fr auto;
-  gap:8px 24px;
-  padding:22px 0;
+  gap:8px 18px;
+  padding:14px 0;
   border-top:1px solid var(--line);
 }
 .cv-entry:first-of-type{border-top:none;}
-.cv-entry-title{font-size:1.05rem; font-weight:600; font-family:'Inter',sans-serif;}
-.cv-entry-org{color:var(--teal); font-size:0.92rem; margin-top:2px;}
-.cv-entry-date{color:var(--muted); font-size:0.88rem; white-space:nowrap;}
+.cv-entry-title{font-size:1rem; font-weight:600; font-family:'Inter',sans-serif;}
+.cv-entry-org{color:var(--teal); font-size:0.9rem; margin-top:2px;}
+.cv-entry-date{color:var(--muted); font-size:0.86rem; white-space:nowrap;}
 .cv-entry ul{
   grid-column:1 / -1;
   list-style:none;
   counter-reset:cvitem;
-  margin:16px 0 0; padding-left:0;
+  margin:12px 0 0; padding-left:0;
   color:#cfd1cb; font-size:0.95rem;
 }
 .cv-entry ul li{
   position:relative;
   counter-increment:cvitem;
-  min-height:26px;
-  margin-bottom:14px;
-  padding-left:40px;
+  min-height:24px;
+  margin-bottom:12px;
+  padding-left:34px;
   padding-top:2px;
 }
 .cv-entry ul li::before{
@@ -514,7 +515,7 @@ main.cv-main{padding:70px 0 110px;}
 .cv-entry ul li:last-child::after{display:none;}
 
 .cv-grid-two{
-  display:grid; grid-template-columns:1fr 1fr; gap:48px;
+  display:grid; grid-template-columns:1fr 1fr; gap:28px;
 }
 .cv-block h3{
   font-family:'Inter',sans-serif; font-size:0.95rem; font-weight:600;
@@ -729,7 +730,7 @@ main.cv-main{padding:70px 0 110px;}
 <body>
 <header>
   <nav class="nav">
-    <a href="index.html" class="mark">Ezéckiel G. Atteka</a>
+    <a href="index.html" class="mark">Ezéckiel Atteka</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="apropos.html">À propos</a></li>
@@ -759,7 +760,7 @@ main.cv-main{padding:70px 0 110px;}
     </div>
 
     <div class="cv-section">
-      <h2>Expérience</h2>
+      <h2>Experiences Professionnelles</h2>
 
       <div class="cv-entry">
         <div>
@@ -805,7 +806,7 @@ main.cv-main{padding:70px 0 110px;}
       <div class="cv-entry">
         <div>
           <div class="cv-entry-title">Licence en Informatique et Télécommunications — en cours (3ᵉ année)</div>
-          <div class="cv-entry-org">INSTI Lokossa</div>
+          <div class="cv-entry-org">Instiu National Superieur De Technologie Industrielle(INSTI-Lokossa)</div>
         </div>
         <div class="cv-entry-date">En cours</div>
       </div>
