@@ -115,7 +115,7 @@ header{
     max-height:0; overflow:hidden;
     transition:max-height .3s ease;
   }
-  .nav-links.open{max-height:240px;}
+  .nav-links.open{max-height:600px;}
   .nav-links a{
     display:block; padding:16px 32px; border-top:1px solid var(--line);
   }
@@ -208,18 +208,19 @@ header{
 
 /* ---------- page header (réalisations / contact) ---------- */
 .page-head{
-  padding:80px 0 60px;
+  padding:36px 0 24px;
   border-bottom:1px solid var(--line);
 }
+.page-head .wrap{ text-align:center; }
 .page-head span.kicker{
-  font-size:0.95rem; color:var(--teal); margin-bottom:18px; display:block;
+  font-size:0.9rem; color:var(--teal); margin-bottom:10px; display:block; text-align:center;
 }
 .page-head h1{
-  font-size:clamp(2.2rem, 4vw, 3.1rem);
-  max-width:18ch;
+  font-size:clamp(1.6rem, 3vw, 2.4rem);
+  max-width:48ch; margin:0 auto; text-align:center; line-height:1.2;
 }
 .page-head p{
-  margin-top:20px; color:#cfd1cb; max-width:52ch; font-size:1.05rem;
+  margin-top:10px; color:#cfd1cb; max-width:60ch; font-size:0.98rem; text-align:center; margin-left:auto; margin-right:auto;
 }
 
 /* ---------- réalisations ---------- */
@@ -398,19 +399,17 @@ main.apropos-main{padding:80px 0 100px;}
 /* ---------- portfolio / boutique (placeholder) ---------- */
 main.placeholder-main{padding:100px 0 140px;}
 .coming-soon{
-  border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  padding:64px 0;
+  padding:48px 0 32px;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   gap:24px;
 }
 .coming-soon .slot{
   aspect-ratio:4/5;
-  border:1px solid var(--line);
   background:var(--ink-2);
   display:flex; align-items:center; justify-content:center;
-  color:var(--muted); font-size:0.85rem;
+  color:var(--muted); font-size:0.95rem; border-radius:8px;
 }
 .coming-soon-note{
   margin-top:28px; color:var(--muted); font-size:0.95rem;
@@ -729,7 +728,7 @@ main.cv-main{padding:70px 0 110px;}
 <body>
 <header>
   <nav class="nav">
-    <a href="index.html" class="mark">Ezéckiel G. Atteka</a>
+    <a href="index.html" class="mark">Ezéckiel Atteka</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="apropos.html">À propos</a></li>
